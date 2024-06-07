@@ -11,11 +11,11 @@ function BankAccount(custumerName, balance = 0) {
   };
 }
 
-const rakeshAccount = new BankAccount("Rakesh k", 1000);
-const johanSccount = new BankAccount("Johan Deo");
+// const rakeshAccount = new BankAccount("Rakesh k", 1000);
+// const johanSccount = new BankAccount("Johan Deo");
 
-rakeshAccount.deposite(5000);
-johanSccount.deposite(5000);
-rakeshAccount.withdraw(2000);
+// rakeshAccount.deposite(5000);
+// johanSccount.deposite(5000);
+// rakeshAccount.withdraw(2000);
 
-console.log(rakeshAccount.accountNumber);
+// console.log(rakeshAccount.accountNumber);
