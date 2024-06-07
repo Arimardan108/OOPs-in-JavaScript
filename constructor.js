@@ -19,3 +19,18 @@ function BankAccount(custumerName, balance = 0) {
 // rakeshAccount.withdraw(2000);
 
 // console.log(rakeshAccount.accountNumber);
+
+// #######################################################
+
+const account = [];
+const accountForm = document.querySelector("#accountForm");
+const custumerName = document.querySelector("#customerName");
+const balance = document.querySelector("#balance");
+
+accountForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  console.log(custumerName.value, balance.value);
+  accounts.push(account);
+  console.log(accounts);
+});
