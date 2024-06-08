@@ -34,4 +34,5 @@ accountForm.addEventListener("submit", (e) => {
 
 const rakeshAccount = new BankAccount("Rakesh", 1000);
 const johnAccount = new BankAccount("john", 2000);
+
 console.log(rakeshAccount, johnAccount);
