@@ -3,7 +3,7 @@ function BankAccount(customerName, balance = 0) {
   this.accountNumber = Date.now();
   this.balance = balance;
 
-  this.deposite = function (amount) {
+  this.deposit = function (amount) {
     this.balance += amount;
   };
   this.withdraw = (amount) => {
@@ -38,10 +38,11 @@ accountForm.addEventListener("submit", (e) => {
   console.log(accounts);
 });
 
-depositeForm.addEventListner("submit", (e) => {
+depositForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const account = accounts.find(
     (account) => account.accountNumber === +accountNumber.value
   );
-  account.desosit(amount.value);
+  account.deposit(+amount.value);
+  console.log(accounts);
 });
