@@ -31,9 +31,3 @@ accountForm.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log(customerName.value, balance.value);
 });
-
-// const rakeshAccount = new BankAccount("Rakesh", 1000);
-// const johnAccount = new BankAccount("john", 2000);
-// rakeshAccount.deposite(5000);
-// johnAccount.deposite(1000);
-// console.log(rakeshAccount, johnAccount);
