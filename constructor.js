@@ -1,5 +1,5 @@
-function BankAccount(custumerName, balance = 0) {
-  this.custumerName = custumerName;
+function BankAccount(customerName, balance = 0) {
+  this.customerName = customerName;
   this.accountNumber = Date.now();
   this.balance = balance;
 
@@ -22,15 +22,12 @@ function BankAccount(custumerName, balance = 0) {
 
 // #######################################################
 
-const account = [];
+const accounts = [];
 const accountForm = document.querySelector("#accountForm");
-const custumerName = document.querySelector("#customerName");
+const customerName = document.querySelector("#customerName");
 const balance = document.querySelector("#balance");
 
 accountForm.addEventListener("submit", (e) => {
   e.preventDefault();
-
-  console.log(custumerName.value, balance.value);
-  accounts.push(account);
-  console.log(accounts);
+  console.log(customerName.value, balance.value);
 });
