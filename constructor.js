@@ -1,3 +1,8 @@
+// About Constructor
+/*
+In JavaScript, a constructor is a special method used for creating and initializing objects created with a class. Here's how you can define and use a constructor in JavaScript:
+*/
+
 function BankAccount(customerName, balance = 0) {
   this.customerName = customerName;
   this.accountNumber = Date.now();
