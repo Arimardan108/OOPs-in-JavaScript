@@ -37,3 +37,10 @@ accountForm.addEventListener("submit", (e) => {
   accounts.push(account);
   console.log(accounts);
 });
+
+depositeForm.addEventListner("submit", (e) => {
+  e.preventDefault();
+  const account = accounts.find(
+    (account) => account.accountNumber === +accountNumber.value
+  );
+});
