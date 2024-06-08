@@ -43,4 +43,5 @@ depositeForm.addEventListner("submit", (e) => {
   const account = accounts.find(
     (account) => account.accountNumber === +accountNumber.value
   );
+  account.desosit(amount.value);
 });
