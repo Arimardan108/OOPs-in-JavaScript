@@ -29,5 +29,7 @@ const balance = document.querySelector("#balance");
 
 accountForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  const account = new BankAccount(customerName.value, balance.value);
+  const account = new BankAccount(customerName.value, +balance.value);
+  accounts.push(account);
+  console.log(accounts);
 });
