@@ -27,6 +27,10 @@ const accountForm = document.querySelector("#accountForm");
 const customerName = document.querySelector("#customerName");
 const balance = document.querySelector("#balance");
 
+const depositeForm = document.querySelector("#depositForm");
+const accountNumber = document.querySelector("#accountNumber");
+const amount = document.querySelector("#amount");
+
 accountForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const account = new BankAccount(customerName.value, +balance.value);
