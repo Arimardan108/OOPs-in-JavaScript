@@ -25,6 +25,9 @@ BankAccount.prototype.deposite = function (amount) {
   this.balance = amount;
 };
 
+BankAccount.prototype.withdraw = (amount) => {
+  this.balance;
+};
 // console.log(BankAccount.prototype);
 
 rakeshAccount.deposite(3000);
