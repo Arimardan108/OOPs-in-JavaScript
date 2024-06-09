@@ -17,7 +17,14 @@ function BankAccount(customerName, balance = 0) {
   };
 }
 
-// const rakeshAccount = new BankAccount("Rakesh k");
+const rakeshAccount = new BankAccount("Rakesh k");
 // const johnAccount = new BankAccount("johnAccpunt");
 
 // console.log(rakeshAccount, johnAccount);
+BankAccount.prototype.deposite = function (amount) {
+  this.balance = amount;
+};
+
+rakeshAccount.deposite(3000);
+
+console.log(rakeshAccount);
