@@ -24,6 +24,7 @@ const rakeshAccount = new BankAccount("Rakesh k");
 BankAccount.prototype.deposite = function (amount) {
   this.balance = amount;
 };
+// console.log(BankAccount.prototype);
 
 rakeshAccount.deposite(3000);
 
