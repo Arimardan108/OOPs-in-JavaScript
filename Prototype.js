@@ -17,7 +17,7 @@ function BankAccount(customerName, balance = 0) {
   };
 }
 
-const rakeshAccount = new BankAccount("Rakesh k");
-const johnAccount = new BankAccount("johnAccpunt");
+// const rakeshAccount = new BankAccount("Rakesh k");
+// const johnAccount = new BankAccount("johnAccpunt");
 
-console.log(rakeshAccount, johnAccount);
+// console.log(rakeshAccount, johnAccount);
