@@ -6,7 +6,7 @@ Understanding prototypes is essential for understanding how JavaScript's inherit
 
 function BankAccount(customerName, balance = 0) {
   this.customerName = customerName;
-  this.accountNumber = this.accountNumber;
+  this.accountNumber = Date.now();
   this.balance = balance;
 
   this.deposite = function (amount) {
@@ -18,4 +18,6 @@ function BankAccount(customerName, balance = 0) {
 }
 
 const rakeshAccount = new BankAccount("Rakesh k");
-console.log(rakeshAccount);
+const johnAccount = new BankAccount("johnAccpunt");
+
+console.log(rakeshAccount, johnAccount);
