@@ -15,7 +15,20 @@ class BankAccount {
     this.accountNumber = Date.now();
     this.balance = balance;
   }
+
+  deposite(amount) {
+    this.balance += amount;
+  }
+
+  withdraw(amount) {
+    this.balance -= amount;
+  }
 }
 
 const rakeshAccount = new BankAccount("Rakesh K", 1000);
+rakeshAccount.deposite(5000);
+const johnAccount = new BankAccount("John");
+johnAccount.deposite(2000);
+johnAccount.withdraw(200);
 console.log(rakeshAccount);
+console.log(johnAccount);
