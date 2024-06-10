@@ -93,7 +93,7 @@ class SavingAccount extends BankAccount {
     Super(customerName, balance);
   }
 
-  takeBusinessLoan(amount) {
-    console.log("Taking Business loan", amount);
+  takePersonalLoan(amount) {
+    console.log("Taking Personal loan", amount);
   }
 }
