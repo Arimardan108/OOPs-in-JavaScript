@@ -81,4 +81,7 @@ class CurrentAccount {
   constructor(customerName, balance = 0) {
     Super(customerName, balance);
   }
+  takeBusinessLoan(amount) {
+    console.log("Taking business loan", amount);
+  }
 }
