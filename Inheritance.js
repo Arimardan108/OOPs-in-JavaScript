@@ -12,24 +12,18 @@ function BankAccount(customerName, balance = 0) {
   this.balance = balance;
 }
 
-function currentAccount(customerName, balance = 0) {
-  this.customerName = customerName;
-  this.accountNumber = Date.now();
-  this.balance = balance;
+BankAccount.prototype.deposit = function (amount) {
+  this.amount += amount;
+};
+
+function CurrentAccount(customerName, balance = 0) {
   this.transanctionLimit = 50000;
 }
 
-currentAccount.prototype.takeBusinessLoan = function (amount) {
+CurrentAccount.prototype.takeBusinessLoan = function (amount) {
   console.log("Taking bussiness loan", amount);
 };
 
-currentAccount.prototype.deposit = function (amount) {
-  this.balance += amount;
-};
-
-currentAccount.prototype.withdraw = function (amount) {
-  this.balance -= amount;
-};
 function SavingAccount(customerName, balance = 0) {
   this.customerName = customerName;
   this.accountNumber = Date.now();
