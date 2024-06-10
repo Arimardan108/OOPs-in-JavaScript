@@ -17,8 +17,12 @@ BankAccount.prototype.deposit = function (amount) {
 };
 
 function CurrentAccount(customerName, balance = 0) {
+  BankAccount.call(this, customerName, balance);
+
   this.transanctionLimit = 50000;
 }
+
+CurrentAccount.prototype = Object.create(BankAccount.prototype);
 
 CurrentAccount.prototype.takeBusinessLoan = function (amount) {
   console.log("Taking bussiness loan", amount);
