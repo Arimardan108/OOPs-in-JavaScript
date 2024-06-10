@@ -6,3 +6,16 @@ This allows for code reuse and the creation of hierarchical relationships betwee
 In JavaScript, inheritance can be achieved using both the classical and prototypal inheritance models.
 Since the introduction of ES6, the class syntax has made it easier to work with inheritance in a way that is more familiar to those who have experience with other OOP languages.
 */
+function BankAccount(customerName, balance = 0) {
+  this.customerName = customerName;
+  this.accountNumber = Date.now();
+  this.balance = balance;
+}
+BankAccount.prototype.deposit = function (amount) {
+  this.balance += amount;
+};
+BankAccount.prototype.withdraw = (amount) => {
+  this.balance -= amount;
+};
+const rakeshAccont = new BankAccount("Rakesh k", 1000);
+console.log(rakeshAccount);
