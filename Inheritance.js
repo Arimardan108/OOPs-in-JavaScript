@@ -23,6 +23,13 @@ currentAccount.prototype.takeBussesionLoan = function (amount) {
   console.log("Taking bussiness loan", amount);
 };
 
+function SavingAccount(customerName, balance = 0) {
+  this.customerName = customerName;
+  this.accountNumber = Date.now();
+  this.balance = balance;
+  this.transanctionLimit = 10000;
+}
+
 BankAccount.prototype.deposit = function (amount) {
   this.balance += amount;
 };
