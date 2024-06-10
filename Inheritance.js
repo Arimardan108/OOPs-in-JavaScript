@@ -25,9 +25,14 @@ CurrentAccount.prototype.takeBusinessLoan = function (amount) {
 };
 
 function SavingAccount(customerName, balance = 0) {
+  BankAccount.call(this, customerName, balance);
   this.transanctionLimit = 10000;
 }
 
 SavingAccount.prototype.takePersonalLoan = function (amount) {
   console.log("Taking personal Loan", amount);
 };
+
+const rakeshAccount = new SavingAccount("Rakesh k", 500);
+// rakeshAccount.deposit(500);
+console.log(rakeshAccount);
