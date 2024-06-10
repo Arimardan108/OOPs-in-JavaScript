@@ -16,6 +16,10 @@ BankAccount.prototype.deposit = function (amount) {
   this.amount += amount;
 };
 
+BankAccount.prototype.withdraw = function (amount) {
+  this.amount -= amount;
+};
+
 function CurrentAccount(customerName, balance = 0) {
   BankAccount.call(this, customerName, balance);
 
@@ -33,10 +37,14 @@ function SavingAccount(customerName, balance = 0) {
   this.transanctionLimit = 10000;
 }
 
+SavingAccount.prototype = Object.create(BankAccount.prototype);
+
 SavingAccount.prototype.takePersonalLoan = function (amount) {
   console.log("Taking personal Loan", amount);
 };
 
 const rakeshAccount = new SavingAccount("Rakesh k", 500);
-// rakeshAccount.deposit(500);
+rakeshAccount.deposit(500);
+rakeshAccount.withdraw(100);
+rakeshAccount.takePersonalLoan(40000);
 console.log(rakeshAccount);
