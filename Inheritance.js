@@ -11,11 +11,23 @@ function BankAccount(customerName, balance = 0) {
   this.accountNumber = Date.now();
   this.balance = balance;
 }
+
+function currentAccount(customerName, balance = 0) {
+  this.customerName = customerName;
+  this.accountNumber = Date.now();
+  this.balance = balance;
+  this.transanctionLimit = 50000;
+}
+
+currentAccount.prototype.takeBussesionLoan = function (amount) {
+  console.log("Taking bussiness loan", amount);
+};
+
 BankAccount.prototype.deposit = function (amount) {
   this.balance += amount;
 };
 BankAccount.prototype.withdraw = (amount) => {
   this.balance -= amount;
 };
-const rakeshAccont = new BankAccount("Rakesh k", 1000);
+const rakeshAccount = new currentAccount("Rakesh k", 1000);
 console.log(rakeshAccount);
