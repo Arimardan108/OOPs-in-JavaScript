@@ -19,10 +19,17 @@ function currentAccount(customerName, balance = 0) {
   this.transanctionLimit = 50000;
 }
 
-currentAccount.prototype.takeBussesionLoan = function (amount) {
+currentAccount.prototype.takeBusinessLoan = function (amount) {
   console.log("Taking bussiness loan", amount);
 };
 
+currentAccount.prototype.deposit = function (amount) {
+  this.balance += amount;
+};
+
+currentAccount.prototype.withdraw = function (amount) {
+  this.balance -= amount;
+};
 function SavingAccount(customerName, balance = 0) {
   this.customerName = customerName;
   this.accountNumber = Date.now();
@@ -30,11 +37,15 @@ function SavingAccount(customerName, balance = 0) {
   this.transanctionLimit = 10000;
 }
 
+SavingAccount.prototype.takePersonalLoan = function (amount) {
+  console.log("Taking personal Loan", amount);
+};
+
 BankAccount.prototype.deposit = function (amount) {
   this.balance += amount;
 };
 BankAccount.prototype.withdraw = (amount) => {
   this.balance -= amount;
 };
-const rakeshAccount = new currentAccount("Rakesh k", 1000);
+const rakeshAccount = new SavingAccount("Rakesh k", 1000);
 console.log(rakeshAccount);
