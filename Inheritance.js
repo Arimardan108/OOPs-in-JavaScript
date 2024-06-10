@@ -75,3 +75,10 @@ class BankAccount {
     this.balance -= amount;
   }
 }
+
+class CurrentAccount {
+  transactionLimmit = 5000;
+  constructor(customerName, balance = 0) {
+    Super(customerName, balance);
+  }
+}
