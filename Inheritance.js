@@ -85,3 +85,15 @@ class CurrentAccount {
     console.log("Taking business loan", amount);
   }
 }
+
+class SavingAccount extends BankAccount {
+  transactionLimmit = 1000;
+
+  construster(customerName, balance = 0) {
+    Super(customerName, balance);
+  }
+
+  takeBusinessLoan(amount) {
+    console.log("Taking Business loan", amount);
+  }
+}
