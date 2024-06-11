@@ -1,3 +1,4 @@
+
 // // Inheritance
 // /*
 // inheritance is a fundamental concept where one class (or function constructor in JavaScript)
