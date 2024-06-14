@@ -87,13 +87,19 @@ class CurrentAccount {
 }
 
 class SavingAccount extends BankAccount {
-  transactionLimmit = 1000;
+  transactionLimmit = 10000;
 
   construster(customerName, balance = 0) {
-    Super(customerName, balance);
+    Super(customerName, balance);KO
   }
 
   takePersonalLoan(amount) {
     console.log("Taking Personal loan", amount);
   }
 }
+
+const rakeshAccount = new SavingAccount("Rakesh k", 500);
+rakeshAccount.deposite(500);
+rakeshAccount.withdraw(100);
+rakeshAccount.takePersonalLoan(40000);
+console.log(rakeshAccount);
