@@ -29,3 +29,6 @@ class CurrentAccount {
     Super(customerName, balance);
   }
 }
+
+const rakeshAccount = new CurrentAccount("Rakesh K", 5000);
+console.log(rakeshAccpunt);
