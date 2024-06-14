@@ -1,5 +1,7 @@
+
 // // Inheritance
 // /*
+
 // inheritance is a fundamental concept where one class (or function constructor in JavaScript)
 // inherits the properties and methods of another class.
 // This allows for code reuse and the creation of hierarchical relationships between classes.
