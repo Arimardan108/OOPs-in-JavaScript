@@ -1,4 +1,3 @@
-
 // // Inheritance
 // /*
 
@@ -78,10 +77,10 @@ class BankAccount {
   }
 }
 
-class CurrentAccount {
+class CurrentAccount extends BankAccount {
   transactionLimmit = 5000;
   constructor(customerName, balance = 0) {
-    Super(customerName, balance);
+    super(customerName, balance);
   }
   takeBusinessLoan(amount) {
     console.log("Taking business loan", amount);
@@ -92,7 +91,8 @@ class SavingAccount extends BankAccount {
   transactionLimmit = 10000;
 
   construster(customerName, balance = 0) {
-    Super(customerName, balance);KO
+    Super(customerName, balance);
+    KO;
   }
 
   takePersonalLoan(amount) {
