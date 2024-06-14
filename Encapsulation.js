@@ -35,4 +35,5 @@ class CurrentAccount extends BankAccount {
   }
 }
 const rakeshAccount = new CurrentAccount("Rakesh K", 5000);
-console.log(rakeshAccount);
+
+console.log((rakeshAccount.balance = 6000));
