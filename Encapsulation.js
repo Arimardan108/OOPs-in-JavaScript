@@ -23,12 +23,16 @@ class BankAccount {
   }
 }
 
-class CurrentAccount {
-  transactionLimmit = 5000;
+class CurrentAccount extends BankAccount {
+  transactionLimmit = 50000;
+
   constructor(customerName, balance = 0) {
-    Super(customerName, balance);
+    super(customerName, balance);
+  }
+
+  takeBusinessLoan(amount) {
+    console.log("Taking business loan", amount);
   }
 }
-
 const rakeshAccount = new CurrentAccount("Rakesh K", 5000);
-console.log(rakeshAccpunt);
+console.log(rakeshAccount);
