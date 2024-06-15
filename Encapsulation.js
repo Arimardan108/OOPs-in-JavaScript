@@ -23,6 +23,9 @@ class BankAccount {
   }
 
   setBalance(amount) {
+    if (isNaN(amount)) {
+      throw new Error("Amount is not a valid input");
+    }
     this.#balance = amount;
   }
 }
