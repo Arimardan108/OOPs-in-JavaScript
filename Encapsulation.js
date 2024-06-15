@@ -41,7 +41,12 @@ class CurrentAccount extends BankAccount {
     super(customerName, balance);
   }
 
+  calculateInterest(amount) {
+    console.log("Calculating Intrest");
+  }
+
   takeBusinessLoan(amount) {
+    this.calculateInterest(amount);
     console.log("Taking business loan", amount);
   }
 }
