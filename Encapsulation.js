@@ -11,15 +11,15 @@ class BankAccount {
   constructor(customerName, balance = 0) {
     this.customerName = customerName;
     this.accountNumber = Date.now();
-    this.balance = balance;
+    this._balance = balance;
   }
 
   deposite(amount) {
-    this.balance += amount;
+    this._balance += amount;
   }
 
   withdraw(amount) {
-    this.balance -= amount;
+    this._balance -= amount;
   }
 }
 
@@ -35,4 +35,5 @@ class CurrentAccount extends BankAccount {
   }
 }
 const rakeshAccount = new CurrentAccount("Rakesh K", 5000);
+rakeshAccount._balance = "Hello";
 console.log(rakeshAccount);
