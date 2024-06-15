@@ -22,7 +22,7 @@ class BankAccount {
     this.#balance -= amount;
   }
 
-  setBalance() {
+  setBalance(amount) {
     this.#balance = amount;
   }
 }
@@ -40,6 +40,6 @@ class CurrentAccount extends BankAccount {
 }
 const rakeshAccount = new CurrentAccount("Rakesh K", 5000);
 
-rakeshAccount.setBalance = 4000;
+rakeshAccount.setBalance(4000);
 
 console.log(rakeshAccount);
