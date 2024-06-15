@@ -41,12 +41,12 @@ class CurrentAccount extends BankAccount {
     super(customerName, balance);
   }
 
-  calculateInterest(amount) {
+  #calculateInterest(amount) {
     console.log("Calculating Intrest");
   }
 
   takeBusinessLoan(amount) {
-    this.calculateInterest(amount);
+    this.#calculateInterest(amount);
     console.log("Taking business loan", amount);
   }
 }
@@ -54,5 +54,5 @@ const rakeshAccount = new CurrentAccount("Rakesh K", 5000);
 
 // rakeshAccount.setBalance("hello");
 // rakeshAccount.setBalance(4000);
-rakeshAccount.takeBusinessLoan(40000);
+rakeshAccount.calculateInterest(4000);
 console.log(rakeshAccount);
