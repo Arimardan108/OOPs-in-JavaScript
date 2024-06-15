@@ -6,20 +6,20 @@ Encapsulation in object-oriented programming (OOP) in JavaScript is a concept wh
 class BankAccount {
   customerName;
   accountNumber;
-  _balance = 0;
+  #balance = 0;
 
   constructor(customerName, balance = 0) {
     this.customerName = customerName;
     this.accountNumber = Date.now();
-    this._balance = balance;
+    this.#balance = balance;
   }
 
   deposite(amount) {
-    this._balance += amount;
+    this.#balance += amount;
   }
 
   withdraw(amount) {
-    this._balance -= amount;
+    this.#balance -= amount;
   }
 }
 
@@ -35,5 +35,5 @@ class CurrentAccount extends BankAccount {
   }
 }
 const rakeshAccount = new CurrentAccount("Rakesh K", 5000);
-rakeshAccount._balance = "Hello";
+rakeshAccount.#balance = "Hello";
 console.log(rakeshAccount);
