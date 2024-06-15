@@ -21,6 +21,10 @@ class BankAccount {
   withdraw(amount) {
     this.#balance -= amount;
   }
+
+  setBalance() {
+    this.#balance = amount;
+  }
 }
 
 class CurrentAccount extends BankAccount {
@@ -36,6 +40,6 @@ class CurrentAccount extends BankAccount {
 }
 const rakeshAccount = new CurrentAccount("Rakesh K", 5000);
 
-// rakeshAccount.#balance = "Hello";
+rakeshAccount.setBalance = 4000;
 
 console.log(rakeshAccount);
