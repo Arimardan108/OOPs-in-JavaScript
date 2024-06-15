@@ -54,5 +54,5 @@ const rakeshAccount = new CurrentAccount("Rakesh K", 5000);
 
 // rakeshAccount.setBalance("hello");
 // rakeshAccount.setBalance(4000);
-rakeshAccount.calculateInterest(4000);
+rakeshAccount.takeBusinessLoan(40000);
 console.log(rakeshAccount);
