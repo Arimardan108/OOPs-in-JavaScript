@@ -12,4 +12,4 @@ class User {
 
 const user1 = new User("Rakesh k", 24);
 
-console.log(user1);
+console.log(user1.name, user1.age);
