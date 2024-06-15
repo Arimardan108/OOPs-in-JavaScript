@@ -35,5 +35,7 @@ class CurrentAccount extends BankAccount {
   }
 }
 const rakeshAccount = new CurrentAccount("Rakesh K", 5000);
-rakeshAccount.#balance = "Hello";
+
+// rakeshAccount.#balance = "Hello";
+
 console.log(rakeshAccount);
