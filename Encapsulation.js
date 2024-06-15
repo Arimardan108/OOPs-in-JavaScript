@@ -50,4 +50,4 @@ const rakeshAccount = new CurrentAccount("Rakesh K", 5000);
 // rakeshAccount.setBalance("hello");
 rakeshAccount.setBalance(4000);
 
-console.log(rakeshAccount);
+console.log(rakeshAccount.getBalance());
