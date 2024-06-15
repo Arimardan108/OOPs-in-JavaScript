@@ -28,6 +28,10 @@ class BankAccount {
     }
     this.#balance = amount;
   }
+
+  getBalance() {
+    return this.#balance;
+  }
 }
 
 class CurrentAccount extends BankAccount {
