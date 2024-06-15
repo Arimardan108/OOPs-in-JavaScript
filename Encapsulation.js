@@ -22,14 +22,14 @@ class BankAccount {
     this.#balance -= amount;
   }
 
-  setBalance(amount) {
+  set balance(amount) {
     if (isNaN(amount)) {
       throw new Error("Amount is not a valid input");
     }
     this.#balance = amount;
   }
 
-  getBalance() {
+  get balance() {
     return this.#balance;
   }
 }
